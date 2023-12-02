@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "CMS3",
+    "description": "A focused extension on creating and controlling files stored in S3.",
+    "version": "1.0",
+    "action": {
+        "default_icon": "assets/icons/logo.png"
+      },
+
+      "background": {
+        "service_worker": "assets/services/service.js",
+        "type": "module"
+      }
+}
