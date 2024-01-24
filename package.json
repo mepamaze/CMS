@@ -1,45 +1,42 @@
 {
   "name": "cms3",
-  "version": "0.0.0",
+  "productName": "cms3",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": ".webpack/main",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:cms3": "node dist/cms3/server/server.mjs"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
   },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^17.0.0",
-    "@angular/common": "^17.0.0",
-    "@angular/compiler": "^17.0.0",
-    "@angular/core": "^17.0.0",
-    "@angular/forms": "^17.0.0",
-    "@angular/platform-browser": "^17.0.0",
-    "@angular/platform-browser-dynamic": "^17.0.0",
-    "@angular/platform-server": "^17.0.0",
-    "@angular/router": "^17.0.0",
-    "@angular/ssr": "^17.0.3",
-    "@aws-sdk/client-s3": "^3.465.0",
-    "express": "^4.18.2",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.14.2"
+  "keywords": [],
+  "author": {
+    "name": "Mepamaze",
+    "email": "mepamaze@gmail.com"
   },
+  "license": "MIT",
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.0.0",
-    "@angular/cli": "^17.0.0",
-    "@angular/compiler-cli": "^17.0.0",
-    "@types/express": "^4.17.17",
-    "@types/jasmine": "~5.1.0",
-    "@types/node": "^18.18.0",
-    "jasmine-core": "~5.1.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.2.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.2.2"
+    "@babel/core": "^7.23.7",
+    "@babel/preset-react": "^7.23.3",
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-deb": "^7.2.0",
+    "@electron-forge/maker-rpm": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+    "@electron-forge/plugin-webpack": "^7.2.0",
+    "@vercel/webpack-asset-relocator-loader": "1.7.3",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.0.0",
+    "electron": "28.1.4",
+    "node-loader": "^2.0.0",
+    "style-loader": "^3.0.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
