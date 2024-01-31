@@ -4,19 +4,39 @@
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",
+  "license": "MIT",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "publish": "electron-forge publish",
+    "publish": "env-cmd electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
   "author": {
     "name": "Mepamaze",
-    "email": "mepamaze@gmail.com"
+    "email": "mepamaze@gmail.com",
+    "url": "https://www.mepamaze.com"
   },
-  "license": "MIT",
+  "funding": [
+    "https://www.mepamaze.com/donate",
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/mepamaze"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mepamaze/CMS3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.499.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3",
+    "update-electron-app": "^3.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/preset-react": "^7.23.3",
@@ -27,17 +47,12 @@
     "@electron-forge/maker-zip": "^7.2.0",
     "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
     "@electron-forge/plugin-webpack": "^7.2.0",
+    "@electron-forge/publisher-github": "^7.2.0",
     "@vercel/webpack-asset-relocator-loader": "1.7.3",
     "babel-loader": "^9.1.3",
     "css-loader": "^6.0.0",
     "electron": "28.1.4",
     "node-loader": "^2.0.0",
     "style-loader": "^3.0.0"
-  },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.3"
   }
 }
